@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOOM Coffee &amp; Bar — Domov</title>
+<meta name="description" content="BLOOM Coffee Bar v Trenčíne-Zlatovciach: domáce cookies, sezónne drinky, matcha a vlastná pražená káva City Blend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+@media(max-width:900px){.offer-grid,.news-grid,.split-about,.contact-grid{grid-template-columns:1fr!important}.split-about .ph,.contact-grid .ph{min-height:260px!important}}
+.card{transition:transform .45s,box-shadow .45s}.card:hover{transform:translateY(-10px);box-shadow:0 24px 56px rgba(31,107,92,.16)}
+a[href^="tel"],a[href^="mailto"]{color:inherit}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <a href="index.html" class="brand">BLOOM<small>coffee &amp; bar</small></a>
+  <nav>
+    <ul id="menu">
+      <li><a href="index.html" class="active">Domov</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="o-nas.html">O nás</a></li>
+      <li><a href="novinky.html">Novinky</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="kontakt.html" class="nav-cta">Rezervovať</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </nav>
+</header>
+<section class="hero" id="top" style="position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#15473d 0%,#1f6b5c 45%,#6fbcb0 100%);color:#fff;padding:0 6vw">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 18% 30%,rgba(243,205,212,.35),transparent 30%),radial-gradient(circle at 82% 70%,rgba(201,160,78,.28),transparent 32%),radial-gradient(circle at 60% 20%,rgba(158,215,206,.3),transparent 28%);z-index:1"></div>
+  <div style="position:relative;z-index:3;max-width:720px">
+    <span class="eyebrow" style="display:inline-block;font-size:.78rem;letter-spacing:.36em;text-transform:uppercase;font-weight:600;margin-bottom:24px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.45);opacity:0;animation:fadeUp .9s .2s forwards;transform:translateY(28px)">Trenčín · Zlatovce</span>
+    <h1 style="font-size:clamp(3rem,8vw,6.5rem);margin-bottom:22px;opacity:0;animation:fadeUp .9s .4s forwards;transform:translateY(28px)">Nové chute,<br><em style="font-style:italic;color:var(--mint)">nové miesto</em>,<br>nové zážitky.</h1>
+    <p style="font-size:clamp(1.05rem,1.6vw,1.3rem);max-width:500px;font-weight:400;margin-bottom:40px;opacity:0;animation:fadeUp .9s .6s forwards;transform:translateY(28px)">Moderný coffee bar s jedinečnou atmosférou, kde sa budete cítiť ako doma. Čerstvé domáce cookies, sezónne drinky a vlastná pražená káva.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .8s forwards;transform:translateY(28px)">
+      <a href="menu.html" class="btn btn-primary">Pozrieť menu</a>
+      <a href="kontakt.html" class="btn btn-ghost">Rezervovať stôl</a>
+    </div>
+  </div>
+  <div style="position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:3;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;opacity:.85;animation:bob 2.2s infinite;font-weight:600">scrollujte ↓</div>
+</section>
+
+<div class="strip"><div class="strip-track"><span>Domáce cookies</span><span>Matcha</span><span>City Blend káva</span><span>Sezónne drinky</span><span>Horúca čokoláda</span><span>Domáce cookies</span><span>Matcha</span><span>City Blend káva</span><span>Sezónne drinky</span><span>Horúca čokoláda</span></div></div>
+
+<section class="section-pad center">
+  <div class="wrap reveal">
+    <span class="tag">Vitajte v BLOOM</span>
+    <h2 style="font-size:clamp(2rem,4vw,3.2rem);max-width:840px;margin:0 auto 26px">Miesto, kde sa <em style="font-style:italic;color:var(--mint-deep)">obyčajná pauza</em> mení na malý zážitok.</h2>
+    <p style="max-width:620px;margin:0 auto;font-size:1.08rem;color:#56655d">Farebne a s láskou zariadený priestor v Trenčíne-Zlatovciach, kde dobrá káva stretáva domáce dobroty a milú obsluhu.</p>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="reveal center"><span class="tag">Čo u nás nájdete</span><h2 style="font-size:clamp(2rem,4vw,3.2rem)">Naše malé radosti</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:60px" class="offer-grid">
+      <article class="card reveal" style="background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(31,107,92,.08)">
+        <div class="ph ph-pink" style="height:240px">🍪</div>
+        <div style="padding:30px 28px 36px"><span style="font-family:var(--display);font-style:italic;color:var(--gold);font-size:1.1rem">01</span><h3 style="font-size:1.7rem;margin:6px 0 12px">Domáce cookies</h3><p style="color:#5a6962;font-size:.96rem">Jemné, nadýchané, plnené krémom v americkom štýle. Niečo, čo v Trenčíne ešte nebolo.</p></div>
+      </article>
+      <article class="card reveal" style="background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(31,107,92,.08)">
+        <div class="ph ph-mint" style="height:240px">🍹</div>
+        <div style="padding:30px 28px 36px"><span style="font-family:var(--display);font-style:italic;color:var(--gold);font-size:1.1rem">02</span><h3 style="font-size:1.7rem;margin:6px 0 12px">Sezónne drinky</h3><p style="color:#5a6962;font-size:.96rem">Jedinečné miešané nápoje, ktoré odrážajú to najlepšie zo sezóny.</p></div>
+      </article>
+      <article class="card reveal" style="background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(31,107,92,.08)">
+        <div class="ph ph-pale" style="height:240px">🍵</div>
+        <div style="padding:30px 28px 36px"><span style="font-family:var(--display);font-style:italic;color:var(--gold);font-size:1.1rem">03</span><h3 style="font-size:1.7rem;margin:6px 0 12px">Matcha &amp; špeciality</h3><p style="color:#5a6962;font-size:.96rem">Krémová matcha, horúca čokoláda a dezerty, na ktoré sa budete vracať.</p></div>
+      </article>
+    </div>
+    <div class="center" style="margin-top:50px"><a href="menu.html" class="btn btn-gold">Celé menu</a></div>
+  </div>
+</section>
+
+<section class="section-pad center" style="background:var(--mint-pale)">
+  <div class="wrap reveal">
+    <span class="tag">Čo hovoria zákazníci</span>
+    <h2 style="font-size:clamp(2rem,4vw,3rem)">Mali to <em style="font-style:italic;color:var(--mint-deep)">radi</em></h2>
+    <div style="color:var(--gold);letter-spacing:4px;margin:14px 0 40px;font-size:1.1rem">★★★★★</div>
+    <p style="max-width:640px;margin:0 auto 30px;font-size:1.15rem;font-family:var(--display);font-style:italic;color:#3f5048">„Najlepšia káva široko-ďaleko, domáce cookies výborné a obsluha skvelá. Určite sa sem vrátime.“</p>
+    <a href="o-nas.html" class="btn btn-primary">Viac o nás</a>
+  </div>
+</section>
+<footer>
+  <div class="fbrand">BLOOM</div>
+  <p style="letter-spacing:.3em;font-size:.74rem;text-transform:uppercase">coffee &amp; bar · Trenčín</p>
+  <div class="fnav">
+    <a href="index.html">Domov</a><a href="menu.html">Menu</a>
+    <a href="o-nas.html">O nás</a><a href="novinky.html">Novinky</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+  <div class="socials">
+    <a href="https://www.facebook.com/BLOOM-Coffee-Bar-61565523515236/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/></svg></a>
+    <a href="https://www.instagram.com/bloom.coffee.bar" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.24A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.89A4.29 4.29 0 1116.29 12 4.29 4.29 0 0112 16.29zm6.85-11.15a1.54 1.54 0 11-1.54-1.54 1.54 1.54 0 011.54 1.54z"/></svg></a>
+  </div>
+  <p class="legal">© 2024 · VeVi s.r.o · Sídlo: Súťažná 15, Trenčín · IČO: 56305931<br>Vyrobené s láskou ku káve ☕</p>
+</footer>
+<script src="css/main.js"></script>
+</body>
+</html>
