@@ -109,16 +109,16 @@ footer .fbrand{font-family:var(--display);font-size:2rem;letter-spacing:.2em;col
 }
 
 /* ---- interaktívne menu so záložkami ---- */
-.m-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:50px;position:sticky;top:64px;background:var(--cream);padding:14px 0;z-index:50}
+.m-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:46px;position:sticky;top:62px;background:var(--cream);padding:18px 0 16px;z-index:50;box-shadow:0 10px 18px -12px rgba(20,51,41,.25)}
 .m-tab{font-family:var(--body);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:10px 18px;border:1.5px solid var(--mint);border-radius:40px;background:transparent;color:var(--emerald);cursor:pointer;transition:.25s}
 .m-tab:hover{border-color:var(--gold);color:var(--gold)}
 .m-tab.active{background:var(--emerald);border-color:var(--emerald);color:var(--white)}
 .m-panel{display:none;animation:mfade .4s ease}
 .m-panel.active{display:block}
 @keyframes mfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-.m-group{font-size:1.9rem;color:var(--emerald);margin:38px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:12px}
+.m-group{font-size:1.9rem;color:var(--emerald);margin:38px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:12px;scroll-margin-top:150px}
 .m-group::before{content:'✿';color:var(--gold);font-size:1.1rem}
-.m-group:first-child{margin-top:0}
+.m-group:first-child{margin-top:6px}
 .m-item{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed #d8cdb6}
 .m-info{flex:1;min-width:0}
 .m-name{display:block;font-weight:600;color:var(--ink);font-size:1.04rem}
