@@ -43,32 +43,41 @@ a{color:inherit;text-decoration:none}
 
 /* ---- nav ---- */
 header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 6vw;transition:.4s}
-header.scrolled,header.solid{background:rgba(251,247,240,.93);backdrop-filter:blur(12px);padding:13px 6vw;box-shadow:0 4px 30px rgba(31,107,92,.09)}
-.brand{font-family:var(--display);font-size:1.7rem;font-weight:600;letter-spacing:.18em;color:var(--white);transition:color .4s}
-.brand small{font-size:.6rem;letter-spacing:.4em;display:block;font-family:var(--body);font-weight:500;margin-top:-4px}
-header.scrolled .brand,header.solid .brand{color:var(--emerald)}
+header:not(.scrolled):not(.solid){background:linear-gradient(to bottom,rgba(20,51,41,.55),transparent)}
+header.scrolled,header.solid{background:rgba(247,241,230,.95);backdrop-filter:blur(12px);padding:13px 6vw;box-shadow:0 4px 30px rgba(20,51,41,.12)}
+.brand{font-family:var(--display);font-size:1.8rem;font-weight:600;letter-spacing:.2em;color:var(--white);transition:color .4s;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+.brand small{font-size:.58rem;letter-spacing:.45em;display:block;font-family:var(--body);font-weight:600;margin-top:1px;color:var(--gold-light);text-shadow:none}
+header.scrolled .brand,header.solid .brand{color:var(--emerald);text-shadow:none}
+header.scrolled .brand small,header.solid .brand small{color:var(--gold)}
 nav ul{display:flex;gap:28px;list-style:none;align-items:center}
-nav a{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--white);position:relative;transition:color .3s}
-header.scrolled nav a,header.solid nav a{color:var(--ink)}
+nav a{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--white);position:relative;transition:color .3s;text-shadow:0 1px 6px rgba(0,0,0,.2)}
+header.scrolled nav a,header.solid nav a{color:var(--ink);text-shadow:none}
 nav a.active{color:var(--gold-light)}
 header.scrolled nav a.active,header.solid nav a.active{color:var(--gold)}
 nav a:not(.nav-cta)::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:width .3s}
 nav a:not(.nav-cta):hover::after{width:100%}
-.nav-cta{padding:9px 22px;border:1.6px solid var(--white);border-radius:40px}
-header.scrolled .nav-cta,header.solid .nav-cta{border-color:var(--emerald);color:var(--emerald)}
-.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--white)!important}
+nav a.active:not(.nav-cta)::after{width:100%}
+.nav-cta{padding:9px 24px;border:1.6px solid var(--gold-light);border-radius:40px;color:var(--white)}
+header.scrolled .nav-cta,header.solid .nav-cta{border-color:var(--gold);color:var(--emerald)}
+.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--white)!important;text-shadow:none}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101}
 .burger span{width:26px;height:2px;background:var(--white);transition:.3s}
 header.scrolled .burger span,header.solid .burger span{background:var(--emerald)}
 
+/* ---- botanical decorations ---- */
+.leaf-deco{position:absolute;width:200px;background-repeat:no-repeat;background-size:contain;opacity:.9;pointer-events:none;z-index:1}
+.leaf-tl{top:-30px;left:-40px;height:300px;transform:rotate(15deg)}
+.leaf-br{bottom:-40px;right:-30px;height:320px;transform:rotate(195deg)}
+
 /* ---- page hero (inner pages) ---- */
-.page-hero{position:relative;min-height:48vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#15473d 0%,#1f6b5c 55%,#6fbcb0 100%);color:var(--white);padding:120px 6vw 70px}
-.page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(243,205,212,.3),transparent 30%),radial-gradient(circle at 80% 70%,rgba(201,160,78,.25),transparent 32%);z-index:1}
+.page-hero{position:relative;min-height:52vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#143329 0%,#1e4d3f 55%,#2f6a52 100%);color:var(--white);padding:130px 6vw 80px;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 18% 25%,rgba(220,193,131,.18),transparent 35%),radial-gradient(circle at 82% 75%,rgba(155,191,168,.2),transparent 38%);z-index:1}
+.page-hero::after{content:'';position:absolute;inset:14px;border:1.5px solid rgba(220,193,131,.4);border-radius:4px;z-index:1;pointer-events:none}
 .page-hero-inner{position:relative;z-index:2;max-width:680px}
-.page-hero .eyebrow{font-size:.78rem;letter-spacing:.36em;text-transform:uppercase;font-weight:600;display:inline-block;margin-bottom:16px;opacity:.85}
-.page-hero h1{font-size:clamp(2.6rem,6vw,4.6rem)}
-.page-hero h1 em{font-style:italic;color:var(--mint)}
-.page-hero p{margin-top:16px;font-weight:300;font-size:1.1rem;opacity:.92}
+.page-hero .eyebrow{font-size:.78rem;letter-spacing:.36em;text-transform:uppercase;font-weight:600;display:inline-block;margin-bottom:16px;color:var(--gold-light)}
+.page-hero h1{font-size:clamp(2.8rem,6vw,4.8rem)}
+.page-hero h1 em{font-style:italic;color:var(--gold-light)}
+.page-hero p{margin-top:18px;font-weight:300;font-size:1.1rem;opacity:.94;max-width:600px;margin-left:auto;margin-right:auto}
 
 /* ---- decorative panel (image placeholder) ---- */
 .ph{display:flex;align-items:center;justify-content:center;font-size:5rem;filter:drop-shadow(0 6px 14px rgba(0,0,0,.12))}
@@ -133,3 +142,15 @@ footer .fbrand{font-family:var(--display);font-size:2rem;letter-spacing:.2em;col
   .m-price{font-size:1.2rem}
   .m-group{font-size:1.5rem}
 }
+
+/* ---- botanická vetvička (data-URI) + brand akcenty ---- */
+.leaf-deco{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20320%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a9b6e%22%20stroke-width%3D%222.2%22%20opacity%3D%220.55%22%3E%0A%3Cpath%20d%3D%22M100%20312%20C100%20240%20100%20150%20100%2020%22%20stroke-width%3D%222.6%22/%3E%0A%3C/g%3E%0A%3Cg%20fill%3D%22%238caa7e%22%20opacity%3D%220.5%22%3E%0A%3C/g%3E%0A%3Cg%20fill%3D%22%237e9e72%22%20opacity%3D%220.55%22%3E%0A%3Cpath%20d%3D%22M100%2060%20C70%2040%2040%2048%2022%2030%20C44%2060%2070%2070%20100%2078%20Z%22/%3E%0A%3Cpath%20d%3D%22M100%20100%20C130%2078%20160%2086%20178%2066%20C156%2098%20130%20108%20100%20118%20Z%22/%3E%0A%3Cpath%20d%3D%22M100%20150%20C70%20128%2042%20138%2024%20118%20C46%20150%2072%20160%20100%20168%20Z%22/%3E%0A%3Cpath%20d%3D%22M100%20196%20C130%20174%20158%20184%20176%20164%20C154%20196%20128%20206%20100%20214%20Z%22/%3E%0A%3Cpath%20d%3D%22M100%20244%20C72%20224%2044%20232%2026%20212%20C48%20244%2074%20254%20100%20262%20Z%22/%3E%0A%3C/g%3E%0A%3C/svg%3E")}
+/* zlatá ozdoba pod nadpismi sekcií na domovskej a vnútorných */
+.tag{position:relative}
+.sec-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 8px;color:var(--gold)}
+.sec-divider::before,.sec-divider::after{content:'';height:1px;width:54px;background:linear-gradient(90deg,transparent,var(--gold))}
+.sec-divider::after{background:linear-gradient(90deg,var(--gold),transparent)}
+/* zlatý rám okolo kariet ponuky */
+.card{border:1px solid rgba(194,160,79,.25)}
+/* jemné botanické pozadie celého webu */
+body{background-image:radial-gradient(circle at 0% 0%,rgba(155,191,168,.06),transparent 25%),radial-gradient(circle at 100% 100%,rgba(194,160,79,.05),transparent 25%);background-attachment:fixed}
