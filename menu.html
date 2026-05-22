@@ -154,7 +154,10 @@ document.querySelectorAll('.m-tab').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.m-panel').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
   document.getElementById('tab-'+b.dataset.tab).classList.add('active');
-  document.querySelector('.m-panels').scrollIntoView({behavior:'smooth',block:'start'});
+  // odscrolluj na záložky s rezervou, aby ich hlavička neprekryla
+  const tabs=document.querySelector('.m-tabs');
+  const y=tabs.getBoundingClientRect().top+window.scrollY-120;
+  window.scrollTo({top:y,behavior:'smooth'});
 }));
 </script>
 <footer>
