@@ -18,3 +18,4 @@ Texty a ceny upravíš priamo v .html súboroch. Farby sú v `css/style.css` (se
 
 ## Nasadenie
 Pushni na GitHub → Cloudflare Pages automaticky nasadí. Žiadny build command, output adresár = `/` (root).
+ 
